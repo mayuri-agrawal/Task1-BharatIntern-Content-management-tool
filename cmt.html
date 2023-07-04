@@ -13,49 +13,33 @@
     
 </head>
 <body>
-    <header class="parallax">
+    <!-- <header class="parallax">
         
         <h1 class="responsive-font-example" class="gradient-text" style="color: aliceblue;"><b>Blog Content Management Software</b></h1>    
         <h1 class="responsive-font-example" class="gradient-text"style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; "><b>Blog Content Managment Tool</b></h1>
         <h5 class="responsive-font-example" class="gradient-text" >Create your own blog using our site</h5>
        
-      </header>
-    <nav>
-        
-        <a class="responsive-font-example" href="#" title="Home"> Home </a>
-        <a class="responsive-font-example" href="#" title="" target="_blank"> Services </a>
-        <a class="responsive-font-example" href="#about"> About </a>
-        <a class="responsive-font-example" href="#event"> Blog</a>
-        <a class="responsive-font-example" href="#contect"> Contact</a>
-
-      
-    </nav>
+      </header> -->
+ 
     <br>
     <section class="responsive-font-example">
         <div class="responsive-font-example" >
-        <h1 class="responsive-font-example" id="about" style="color:midnightblue;"><b> Content Managment Software </b></h1>
+        <h1 class="responsive-font-example" id="about"> Bloggit!! </h1>
           <div  class="responsive-font-example" class="sampoorna" >
-              <h4 class="responsive-font-example" style="color: azure;">
-                <b>CMS : </b> 
-                Content Management Software (CMS) is a game-changer for businesses and individuals seeking to efficiently manage their website content. With its intuitive interface and powerful features, CMS makes content creation, organization, and publication a breeze.
-                <br>
-          <br>
-
-          Simplify and Streamline Website Management with Content Management Software
-
-          Content Management Software (CMS) is a game-changer for businesses and individuals seeking to efficiently manage their website content. With its intuitive interface and powerful features, CMS makes content creation, organization, and publication a breeze.
-          
-          Creating and editing content becomes a seamless experience with CMS. Say goodbye to complex coding and HTML knowledge – CMS provides user-friendly text editors and formatting tools, empowering you to compose captivating articles, blog posts, and product descriptions effortlessly.
+              <h4 class="responsive-font-example" id="about1">
+                Say goodbye to complex coding and HTML knowledge – Bloggit provides user-friendly text editors and formatting tools, empowering you to compose captivating articles, blog posts, and product descriptions effortlessly.
           </div>
           </h4> 
 
          </div>
          <br>
     </section>
+
+    <h2 id="text1">Create your own blog</h2>
     <div class="editor">
-        <h2 >Blog Content Management</h2>
+       
         <input type="text" id="title" placeholder="Enter blog title" />
-        <input type="text" id="image" placeholder="Enter image URL" />
+        <input type="url" id="image" placeholder="Enter image URL" />
         <textarea id="content" rows="5" placeholder="Enter blog content"></textarea>
         <input type="text" id="video" placeholder="Enter the video url">
         <button onclick="addBlog()">Add Blog</button>
@@ -79,13 +63,13 @@
     var blogPost = document.createElement("div");
     blogPost.className = "blog-post";
     blogPost.innerHTML = `
-      <h3 style="text-aling:center;">${title}</h3>
+      <h3 id="titleinner" >${title}</h3>
       <br>
   
-      <img src="${image}" alt="Blog Image">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTih3vqeCl4w_3tMXzJZGDnZjiM3pRewxTjg&usqp=CAU" alt="Blog Image">
   
       <br>
-      <p style="color: black; font-size: medium;">${content}</p>
+      <p id="innertext">${content}</p>
       <br>
    
       <iframe width="560" height="315" src="https://www.youtube.com/embed/_rIzkuqKZ00?start=53" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
